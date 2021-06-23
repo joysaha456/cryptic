@@ -1,0 +1,1006 @@
+/**
+ * * Main scss for (cryptic)
+ * ? project   - cryptic
+ * ? author    - getweb inc
+ * TODO: created_by  - kawsarBinSiraj
+ * created_at  - 13/10/2020
+ * modified_by -
+ */
+
+
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* root */
+:root {
+    --mainColor: #1F2C8C;
+    --mainColorLight: #C9D0FF;
+    --subOrdinateColor: #6CD086;
+    --themeDark: #1D1E24;
+    --themeGray: #696A72;
+    --themeGrayLight: #E8EAF9;
+    --containerMaxWidth: 1140px;
+    --fontInitSize: 14px;
+}
+
+/* root - END */
+
+
+
+/* imported scss files */
+@import 'exception';
+
+
+
+
+/* helper classes, initialization */
+.container {
+    max-width: var(--containerMaxWidth);
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--fontInitSize);
+    font-weight: 400;
+    background-color: #F7F7F7;
+}
+
+.bg-mainColor {
+    background-color: var(--mainColor) !important;
+}
+
+.text-mainColor {
+    color: var(--mainColor) !important;
+}
+
+.text-mainColorLight {
+    color: var(--mainColorLight) !important;
+}
+
+.text-subOrdinateColor {
+    color: var(--subOrdinateColor) !important;
+}
+
+.sectionPadding {
+    padding: 120px 0;
+}
+
+.custom-form-control {
+    background-color: var(--white);
+    border-radius: 50px;
+    font-size: var(--fontInitSize);
+    color: var(--themeGray);
+    border-color: transparent;
+    outline: none;
+    transition: all .3s;
+    min-height: 50px;
+    font-weight: 500;
+
+    &:focus {
+        border-color: var(--mainColor);
+        box-shadow: none;
+    }
+}
+
+textarea.custom-form-control {
+    border-radius: 20px;
+}
+
+.sectionHead {
+    .sectionTitle {
+        font-size: calc(var(--fontInitSize) + 22px);
+        font-weight: 700;
+    }
+}
+
+.borderRadius {
+    border-radius: 6px;
+}
+
+.btnInstantEdit {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--subOrdinateColor);
+    font-weight: 800;
+    text-decoration: underline;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+        background-color: var(--mainColor);
+        color: #fff;
+    }
+}
+
+/* helper classes , initialization - END */
+
+
+
+
+
+/* css for presaleListing */
+.presaleListing {
+    background-color: #F7F7F7;
+
+    .nav-tabs .nav-link {
+        font-size: var(--fontInitSize);
+        border: 2px solid #ECECEC;
+        text-align: center;
+        border-radius: 30px;
+        margin: 3px 10px;
+        color: var(--themeDark);
+        font-weight: 500;
+        transition: all .3s;
+
+        &.active {
+            background-color: var(--themeGray);
+            color: var(--white);
+        }
+
+        &:hover {
+            background-color: var(--themeGray);
+            color: var(--white);
+        }
+    }
+}
+
+.listing-card {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+
+    .cardHead {
+        >img {
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        >.title {
+            font-size: calc(var(--fontInitSize) + 10px);
+            font-weight: 700;
+        }
+    }
+
+    .cardBottom {
+        span {
+            font-size: calc(var(--fontInitSize) - 2px);
+            font-weight: 500;
+            color: var(--themeGray);
+        }
+    }
+}
+
+.starReviewShowup {
+    .star {
+        color: #FF9100;
+        margin-right: 7px;
+        font-size: 20px;
+        opacity: .2;
+
+        &.rated {
+            opacity: 1;
+        }
+    }
+}
+
+/* css for presaleListing - END */
+
+
+
+
+
+
+/* css for cryptic */
+.crypticContent {
+    .title {
+        font-size: calc(var(--fontInitSize) + 22px);
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    .subTitle {
+        font-size: calc(var(--fontInitSize) + 4px);
+        font-weight: 400;
+        color: var(--themeGray);
+        margin-bottom: 20px;
+    }
+}
+
+/* css for cryptic */
+
+
+
+
+
+/* css for coinOffer */
+.coinOffer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .coinOfferContent {
+        h3 {
+            font-size: calc(var(--fontInitSize) + 22px);
+            line-height: calc(100% + 15px);
+            color: var(--white);
+            margin-bottom: 35px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: calc(var(--fontInitSize) + 4px);
+            color: var(--mainColorLight);
+            margin-bottom: 55px;
+        }
+    }
+}
+
+/* css for coinOffer - END */
+
+
+
+
+/* css for contactUs */
+.contactUs {
+    background-color: #f7f7f7;
+}
+
+/* css for contactUs - END */
+
+
+
+
+/* css for footer */
+.footer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 120px;
+    padding-bottom: 170px;
+    position: relative;
+
+    .footerGridBox {
+        .footerGridBoxTitle {
+            margin-bottom: 45px;
+            font-size: calc(var(--fontInitSize) + 6px);
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .nav-item {
+            .nav-link {
+                color: var(--mainColorLight);
+                padding: 0;
+                padding-left: 0;
+                position: relative;
+                transition: all .4s;
+                display: inline-block;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 0px;
+                    height: 2px;
+                    border-radius: 10px;
+                    background-color: var(--subOrdinateColor);
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    transition: all .4s;
+                }
+
+                &:hover {
+                    padding-left: 30px;
+                    color: var(--white);
+
+                    &::before {
+                        width: 16px;
+                    }
+                }
+            }
+
+            +.nav-item {
+                .nav-link {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+
+    .footerBottom {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .2);
+
+        p {
+            font-size: var(--fontInitSize);
+            color: var(--mainColorLight);
+            margin: 0;
+        }
+    }
+}
+
+/* css for footer - END */
+
+
+
+
+
+/* css for digitalCurrency*/
+.digitalCurrency {
+    background-color: #fff !important;
+
+    .crypticContent {
+        .subTitle {
+            font-size: calc(var(--fontInitSize) + 2px);
+        }
+    }
+
+    .digitalCurrencyBottom {
+        .crypticContent {
+            .title {
+                font-size: calc(var(--fontInitSize) + 10px);
+            }
+        }
+    }
+
+    .CurrencyBoxesActivity {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+
+        .CurrencyBoxItem {
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 6px;
+
+            h2 {
+                font-size: calc(var(--fontInitSize) + 22px);
+                font-weight: 700;
+            }
+
+            h5 {
+                font-size: calc(var(--fontInitSize) + 2px);
+                font-weight: 500;
+            }
+
+            &.activity {
+                &-green {
+                    background-color: #E5FFEC !important;
+
+                    h2 {
+                        color: #6CD086 !important;
+                    }
+                }
+
+                &-orange {
+                    background-color: #FFF8EB !important;
+
+                    h2 {
+                        color: #FFA500
+                    }
+                }
+
+                &-magenta {
+                    background-color: #FEF1FA !important;
+
+                    h2 {
+                        color: #E557BB
+                    }
+                }
+
+                &-teal {
+                    background-color: #E8FFFB !important;
+
+                    h2 {
+                        color: #4CD4BC
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* css for digitalCurrency - END */
+
+
+
+/* css for submitPresale  */
+.submitPresale {
+    position: relative;
+    margin-top: -630px;
+    padding-bottom: 120px;
+
+    form {
+        border-radius: 6px;
+
+        .form-group {
+            margin-bottom: 30px;
+
+            .coinImgFileLabel {
+                height: 116px;
+                width: 100%;
+                display: block;
+                background: #F6FFF9 url(../img/formFileBg.png) no-repeat;
+                background-size: 70px;
+                background-position: center;
+                border: 2px dashed var(--subOrdinateColor);
+                cursor: pointer;
+
+                .form-control-file {
+                    display: none;
+                }
+            }
+
+            .tox .tox-edit-area__iframe,
+            .tox .tox-toolbar,
+            .tox .tox-toolbar__overflow,
+            .tox .tox-toolbar__primary,
+            .tox-tinymce {
+                background-color: #F8F8F8;
+                border-color: #E5E5E5;
+                border-radius: 5px;
+            }
+
+            label {
+                font-size: var(--fontInitSize);
+                font-weight: 600;
+                color: #000000;
+            }
+
+            .submitPresale-form-control,
+            .submitPresale-textarea-control {
+                height: 52px;
+                background-color: #F8F8F8;
+                border-color: #E5E5E5;
+                font-size: var(--fontInitSize);
+                color: #696A72;
+                font-weight: 500;
+            }
+
+            .submitPresale-textarea-control {
+                height: auto;
+                min-height: 116px;
+            }
+        }
+    }
+}
+
+/* css for submitPresale - END */
+
+
+
+/* css for submitPresale - END */
+.bitCoinCarousel {
+    .owl-nav {
+        >button {
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            background-color: var(--themeGray) !important;
+            color: #fff !important;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            outline: none;
+            border: 0;
+            box-shadow: none;
+            transition: all .3s;
+
+            &:hover {
+                background-color: var(--subOrdinateColor) !important;
+            }
+
+
+            &.owl-prev {
+                right: initial;
+                left: -75px;
+            }
+
+            &.owl-next {
+                left: initial;
+                right: -75px;
+            }
+
+            >span {
+                font-size: 23px;
+            }
+
+
+        }
+    }
+}
+
+/* css for submitPresale - END */
+
+
+
+
+
+/* css for bitCoinChatBox  */
+.bitCoinChatBox {
+    .chatBoxTopContent {
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: #696A72;
+            font-weight: 500;
+            line-height: calc(100% + 10px);
+            word-break: break-all;
+        }
+
+        .coinTopInfo {
+            h3 {
+                font-size: calc(var(--fontInitSize) + 22px);
+                font-weight: 700;
+            }
+        }
+
+        .coinLogoImg {
+            position: relative;
+
+            .btnAddCoinLogoImg {
+                position: absolute;
+                background-color: #fff;
+                top: calc(100% + 5px);
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                font-size: 12px;
+                padding: 0;
+
+                &:hover,
+                &:focus {
+                    background-color: var(--mainColor) !important;
+                }
+            }
+        }
+    }
+
+    .chatBoxBottomContent {
+        h4 {
+            font-size: calc(var(--fontInitSize) + 6px);
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 14px;
+            color: #696A72;
+            font-weight: 500;
+            line-height: calc(100% + 10px);
+        }
+
+        ul {
+            li {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .rightContentBar {
+        .card {
+            padding-top: 35px !important;
+            padding-bottom: 35px !important;
+
+            .useFullLinksGroup {
+
+                li {
+                    margin-right: 15px;
+                    margin-bottom: 15px;
+
+                    .btn {
+                        transition: all .3s;
+                        font-size: 14px;
+                        font-weight: 600;
+                        padding: 10px 20px;
+
+                        &.Website {
+                            background-color: #6CD086;
+                            border-color: #6CD086;
+                        }
+
+                        &.Telegram {
+                            background-color: #33A8DA;
+                            border-color: #33A8DA;
+                        }
+
+                        &.Twitter {
+                            background-color: #1CA0F1;
+                            border-color: #1CA0F1;
+                        }
+
+                        &.Uniswap {
+                            background-color: #D356E3;
+                            border-color: #D356E3;
+                        }
+
+                        &:hover {
+                            opacity: .7;
+                        }
+                    }
+                }
+            }
+
+            .countDownTimer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                grid-gap: 10px;
+
+                .timerBox {
+                    width: 100px;
+                    height: 70px;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    &.timer {
+                        &-green {
+                            background-color: #DDF2E3;
+                        }
+
+                        &-yellow {
+                            background-color: #F9F3E8;
+                        }
+
+                        &-orange {
+                            background-color: #F9E8F4;
+                        }
+
+                        &-lightGreen {
+                            background-color: #E8F9F6;
+                        }
+                    }
+
+                    h4 {
+                        font-size: 16px;
+                        margin: 0;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        color: #222222;
+                        margin: 0;
+                        font-size: 13px;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .cardTitle {
+                font-size: calc(var(--fontInitSize) + 6px);
+                font-weight: 700;
+            }
+
+            ul.scrollBar {
+                max-height: 500px;
+                overflow-x: hidden;
+            }
+
+            ul.link-list {
+                li {
+                    font-size: 14px;
+                    font-weight: 500;
+
+                    +li {
+                        margin-top: 10px;
+                    }
+
+                    a {
+                        color: var(--subOrdinateColor);
+                        display: inline-block;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* css for bitCoinChatBox - END */
+
+
+
+/* css for backToTop, nicescroll , buttonEffect */
+#backToTop {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 100%;
+    background-color: var(--subOrdinateColor);
+    position: fixed;
+    bottom: 110px;
+    right: 60px;
+    font-size: 22px;
+    color: #fff;
+    z-index: 1000;
+    display: none;
+    transition: all .5s;
+
+    &:hover {
+        background-color: var(--mainColorLight);
+    }
+}
+
+/* inspired by
+  http://cgit.drupalcode.org/pace/tree/css/pace-theme-barber-shop.css
+  https://css3wizardry.com/2010/08/23/css3-progress-bar-2/
+ */
+
+.nicescroll-rails-vr .nicescroll-cursors {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    animation: pace-stripe-animation 5s linear infinite;
+    background-size: 20px 20px;
+}
+
+@keyframes pace-stripe-animation {
+    from {
+        background-position-y: 0;
+    }
+
+    to {
+        background-position-y: 100%;
+    }
+}
+
+/* css for backToTop - END */
+
+
+
+
+/* css for allPresaleTable */
+.allPresale {
+    margin-top: -175px;
+    padding-bottom: 120px;
+    position: relative;
+
+    .allPresaleTable {
+        .allPresaleTableSearchForm {
+            .form-control {
+                height: 50px;
+                border-radius: 40px;
+                font-weight: 600;
+                color: #696A72;
+                font-size: 14px;
+                padding-left: 30px;
+
+                &.selectTagControl {
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    background-color: transparent;
+                    background-image: url(../img/downArrow.svg);
+                    background-size: 15px;
+                    background-position: calc(100% - 22px) center;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .FindPresale {
+                border-radius: 40px;
+                height: 50px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        table {
+            thead.tableHead {
+                background-color: var(--mainColor) !important;
+                color: #fff;
+
+                th {
+                    border-bottom: 0;
+
+                    &:first-child {
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+                        min-width: 240px;
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                    }
+                }
+            }
+
+            td,
+            th {
+                vertical-align: middle;
+            }
+
+            td {
+                font-size: 14px;
+                font-weight: 500;
+                color: #696A72;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                &:first-child {
+                    min-width: 240px;
+                }
+
+                .presaleCompanyName {
+                    font-size: calc(var(--fontInitSize) + 6px);
+                }
+            }
+        }
+    }
+}
+
+/* css for allPresaleTable - END */
+
+
+
+
+/* css for paginationBar  */
+.paginationBar {
+    .pagination {
+        .page-item {
+            .page-link {
+                min-width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #000000;
+                font-weight: 600;
+            }
+
+            &.active {
+                .page-link {
+                    background-color: var(--subOrdinateColor);
+                    color: #fff;
+                    border: 0;
+                }
+            }
+
+            &:first-child .page-link {
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+
+            &:last-child .page-link {
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+        }
+    }
+}
+
+/* css for paginationBar - END */
+
+
+
+/* css for webTickerPanel */
+.webTickerPanel {
+    padding: 10px 0;
+    background-color: var(--themeGrayLight);
+
+    #webTicker {
+        li {
+            font-size: 15px;
+            color: var(--themeGray);
+            font-weight: 400;
+
+            ul.child-list {
+                grid-column-gap: 5px;
+            }
+
+            a {
+                font-size: 15px;
+                color: var(--themeGray);
+                text-decoration: none;
+                transition: all .2s;
+                font-weight: 400;
+
+                &:hover {
+                    color: var(--themeDark);
+                }
+            }
+        }
+    }
+}
+
+/* css for webTickerPanel -END */
+
+
+
+
+
+/**
+ * * responsive css for (cryptic)
+ * TODO: created_by  - kawsarBinSiraj
+ */
+
+@media (max-width:992px) {
+    .sectionPadding {
+        padding: 50px 0;
+    }
+
+    .innerHero {
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+
+    .cryptic {
+        .crypticContent .title {
+            font-size: calc(var(--fontInitSize) + 16px);
+        }
+    }
+
+    .header {
+        .navbar-collapse {
+            background-color: rgba(0, 0, 0, .8);
+            border-radius: 4px;
+
+            .navbar-nav {
+                padding: 20px;
+
+                &.navbar-auth {
+                    padding-top: 0px;
+                }
+
+                a.nav-link {
+                    margin-left: 0px !important;
+                    margin-bottom: 6px !important;
+                }
+            }
+        }
+    }
+
+    .digitalCurrency {
+        .CurrencyBoxesActivity {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .digitalCurrencyBottom {
+            .crypticContent {
+                .title {
+                    font-size: calc(var(--fontInitSize) + 4px);
+                }
+            }
+        }
+    }
+
+    .heroSection .heroSection-row {
+        min-height: 550px;
+        justify-content: center;
+        text-align: center;
+
+        .hero-content {
+            h1 {
+                font-size: calc(var(--fontInitSize) + 16px);
+                padding-bottom: 0;
+                margin-bottom: 20px;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * * responsive css for (cryptic)
+ * TODO: created_by  - kawsarBinSiraj - END 
+ */
